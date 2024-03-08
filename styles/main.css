@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Pixelify Sans', sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 :root {
@@ -21,21 +21,70 @@
 body{
     display: grid;
     place-content: center;
+    gap: 10px;
+
     height: 100vh;
     width: 100vw;
     background-color: var(--background-color);
 }
 
+
+#parallax {
+    position: absolute;
+    /* z-index: 10; */
+    width: 100vw;
+    height: 100vh;
+    outline: white 1px dashed;
+}
+
+#parallax svg.large{
+    width: 15vw;
+    height: 15vw;
+}
+
+#parrallax svg.small{
+    width: 10vw;
+    height: 10vw;
+}
+
+#parallax #chest{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    /* outline: white 1px dashed; */
+    fill: #f2ff66;
+}
+
+#parallax #skull{
+
+    position: absolute;
+    top: 30%;
+    left: 85%;
+    /* outline: white 1px dashed; */
+    fill: #f2ff66;
+}
+
+#title {
+    display: grid;
+    place-content: center;
+    width: 60vw;
+    height: 9vh;
+    font-size: 3rem;
+    color: var(--console-accent-color);
+    /* outline: white 1px dashed; */
+}
+
 #console-window {
     width: 60vw;
-    height: 80vh;
+    height: 75vh;
     /* outline: 3px dashed black; */
     background-color: var(--console-color);
 
     display: grid;
     grid-template-columns: repeat(50, 2%);
     grid-template-rows: repeat(40, 2.5%);
-    box-shadow: #085562 0px 3vh 0px;
+    box-shadow: #085562 0px 2vh 0px;
+    z-index: 0;
 }
 
 
@@ -44,8 +93,10 @@ body{
     grid-row: 2 / 36;
     /* outline: 3px dashed red; */
     background-color: var(--console-output-color);
-    color:var(--console-font-color);
+    color:var(--console-accent-color);
     padding: 1vh 1vw;
+    font-size: 1.3rem;
+
 }
 
 .console.input.container{

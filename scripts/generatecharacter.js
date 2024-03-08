@@ -52,7 +52,7 @@ baseCharacter.prototype.equipped ={
 Object.setPrototypeOf(barbarian.prototype, baseCharacter.prototype);
 
 /**------ Character Classes----- */
-function barbarian(name, level) {
+export function barbarian(name, level) {
     baseCharacter.call(this, name, level);
     this.class = 'barbarian';
     this.genBaseStats();
@@ -61,7 +61,7 @@ function barbarian(name, level) {
     this.stats.CON += 1;
 }
 
-function cleric(name, level){
+export function cleric(name, level){
     baseCharacter.call(this, name, level);
     this.class = 'cleric';
     this.genBaseStats();
@@ -69,9 +69,5 @@ function cleric(name, level){
     this.stats.WIS += 2;
     this.stats.STR += 1;
 }
-
-
 let hero1 = new barbarian('Steven',1);
-let hero2 = new cleric('Tracy', 1);
-console.log(hero1);
-console.log(hero2);
+
