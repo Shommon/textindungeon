@@ -1,0 +1,15 @@
+{
+  "name": "textindungeon",
+  "version": "1.0.0",
+  "description": "A mini text based dungeon crawler\\ This project is meant to help test my javascript knowledge.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
