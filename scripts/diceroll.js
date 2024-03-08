@@ -4,7 +4,7 @@
  * @returns {array} tray - The tray of rolls
  */
 
-function roll(dice) {
+export function roll(dice) {
     // detect first and last numbers with regex for an input string if {number}d{number}
     let match = dice.toString().match(/(\d+)d(\d+)/);
     if (match) {
@@ -17,9 +17,6 @@ function roll(dice) {
         return tray;
     }
 }
-// console.log(roll("4d6"));
-export {roll};
-
 
 export function statroll(tray){
     tray.sort((a,b) => b - a);

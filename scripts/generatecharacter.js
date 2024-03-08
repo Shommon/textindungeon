@@ -61,7 +61,17 @@ function barbarian(name, level) {
     this.stats.CON += 1;
 }
 
+function cleric(name, level){
+    baseCharacter.call(this, name, level);
+    this.class = 'cleric';
+    this.genBaseStats();
+    //Add Class Bonuses
+    this.stats.WIS += 2;
+    this.stats.STR += 1;
+}
 
 
 let hero1 = new barbarian('Steven',1);
-console.log(hero1)
+let hero2 = new cleric('Tracy', 1);
+console.log(hero1);
+console.log(hero2);
