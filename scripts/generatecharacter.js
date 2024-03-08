@@ -27,9 +27,7 @@ export function baseCharacter(name, level) {
         this.stats.STR = BaseStats[0];
         this.stats.DEX = BaseStats[1];
         this.stats.CON = BaseStats[2];
-        this.stats.INT = BaseStats[3];
-        this.stats.WIS = BaseStats[4];
-        this.stats.CHA = BaseStats[5];
+        this.stats.MAG = BaseStats[3];
     }
 }
 
@@ -37,9 +35,7 @@ baseCharacter.prototype.stats = {
     "STR": 0,
     "DEX": 0,
     "CON": 0,
-    "INT": 0,
-    "WIS": 0,
-    "CHA": 0
+    "MAG": 0,
 };
 baseCharacter.prototype.equipped ={
     "armor": '',
@@ -66,8 +62,9 @@ export function cleric(name, level){
     this.class = 'cleric';
     this.genBaseStats();
     //Add Class Bonuses
-    this.stats.WIS += 2;
+    this.stats.MAG += 4;
     this.stats.STR += 1;
 }
 let hero1 = new barbarian('Steven',1);
+console.log(hero1);
 
