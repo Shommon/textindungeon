@@ -18,6 +18,7 @@ export function roll(dice) {
     }
 }
 
+
 export function statroll(tray){
     tray.sort((a,b) => b - a);
     tray.pop();

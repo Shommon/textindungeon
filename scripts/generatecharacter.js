@@ -53,8 +53,8 @@ export function barbarian(name, level) {
     this.class = 'barbarian';
     this.genBaseStats();
     //Add Class Bonuses
-    this.stats.STR += 2;
-    this.stats.CON += 1;
+    this.stats.STR += 4;
+    this.stats.CON += 3;
 }
 
 export function cleric(name, level){
@@ -63,8 +63,10 @@ export function cleric(name, level){
     this.genBaseStats();
     //Add Class Bonuses
     this.stats.MAG += 4;
-    this.stats.STR += 1;
+    this.stats.STR += 2;
 }
+
+
 let hero1 = new barbarian('Steven',1);
 console.log(hero1);
 
