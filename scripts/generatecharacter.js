@@ -69,4 +69,3 @@ export function cleric(name, level){
 
 let hero1 = new barbarian('Steven',1);
 console.log(hero1);
-
